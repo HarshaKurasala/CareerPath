@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sch_1",
+    "name": "National Merit Scholarship",
+    "provider": "Government of India",
+    "category": "Merit",
+    "eligibility": {
+      "incomeMax": 800000,
+      "state": "All",
+      "degree": ["B.Tech", "B.Sc", "B.Com", "B.A"],
+      "gender": "Any"
+    },
+    "amount": 50000,
+    "deadline": "2025-12-31"
+  },
+  {
+    "id": "sch_2",
+    "name": "State SC/ST Scholarship",
+    "provider": "State Government",
+    "category": "Need",
+    "eligibility": {
+      "incomeMax": 600000,
+      "state": "Karnataka",
+      "degree": ["B.Sc", "B.Com"],
+      "gender": "Any"
+    },
+    "amount": 30000,
+    "deadline": "2025-10-15"
+  },
+  {
+    "id": "sch_3",
+    "name": "Girls in STEM Scholarship",
+    "provider": "Private Foundation",
+    "category": "Merit",
+    "eligibility": {
+      "incomeMax": 1200000,
+      "state": "All",
+      "degree": ["B.Tech", "B.Sc"],
+      "gender": "Female"
+    },
+    "amount": 75000,
+    "deadline": "2025-11-30"
+  }
+]

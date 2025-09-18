@@ -1,0 +1,35 @@
+[
+  {
+    "id": "clg_1",
+    "name": "Government College of Engineering",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "degrees": ["B.Tech", "M.Tech"],
+    "languages": ["English"],
+    "facilities": ["Hostel", "Library", "Laboratories"],
+    "cutoff": { "B.Tech": 92 },
+    "location": { "lat": 18.5204, "lng": 73.8567 }
+  },
+  {
+    "id": "clg_2",
+    "name": "State Science College",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "degrees": ["B.Sc", "M.Sc"],
+    "languages": ["English", "Kannada"],
+    "facilities": ["Library", "Sports", "Hostel"],
+    "cutoff": { "B.Sc": 75 },
+    "location": { "lat": 12.9716, "lng": 77.5946 }
+  },
+  {
+    "id": "clg_3",
+    "name": "Government Commerce College",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "degrees": ["B.Com", "M.Com"],
+    "languages": ["English", "Gujarati"],
+    "facilities": ["Library", "WiFi"],
+    "cutoff": { "B.Com": 78 },
+    "location": { "lat": 23.0225, "lng": 72.5714 }
+  }
+]
