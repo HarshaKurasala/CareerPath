@@ -4,21 +4,26 @@ const path = require('path');
 
 const router = express.Router();
 
+let colleges = [];
+
 const loadColleges = () => {
   try {
     const filePath = path.join(__dirname, '../../database/seed_data/colleges.json');
     const content = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(content);
+    colleges = JSON.parse(content);
   } catch (e) {
-    return [];
+    console.error("Error loading colleges:", e.message);
+    colleges = [];
   }
 };
 
+// Load once at startup
+loadColleges();
+
 router.get('/', (req, res) => {
   const { q = '', state, degree, lang, facility, page = 1, limit = 20 } = req.query;
-  const all = loadColleges();
 
-  let results = all.filter(c => {
+  let results = colleges.filter(c => {
     const matchesQ = q ? (c.name.toLowerCase().includes(String(q).toLowerCase()) || c.district.toLowerCase().includes(String(q).toLowerCase())) : true;
     const matchesState = state ? c.state.toLowerCase() === String(state).toLowerCase() : true;
     const matchesDegree = degree ? c.degrees.some(d => d.toLowerCase() === String(degree).toLowerCase()) : true;
@@ -36,5 +41,3 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
-
-
