@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://harshakurasala.github.io/CareerPath",
+  "homepage": "https://harshakurasala.github.io/career-guidance-platform",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
